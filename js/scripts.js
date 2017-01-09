@@ -20,9 +20,17 @@ var pintsToQuarts = function() {
 while(option !== "quit") {
 var option = prompt("Which calculator do you want to use? cups, gallons, or pints");
 
+if(option === null) {
+  alert("fine then!");
+}
+
 option = option.toLowerCase();
 
-if(option === "cups") {
+if(option === "quit") {
+  break;
+}
+
+else if(option === "cups") {
   cupsToOunces();
 }
 
@@ -34,3 +42,5 @@ else if(option === "pints") {
   pintsToQuarts();
 }
 }
+
+alert("Thanks for using the unit converter!");

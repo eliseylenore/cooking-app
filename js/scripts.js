@@ -17,7 +17,7 @@ var pintsToQuarts = function() {
 }
 
 
-
+while(option !== "quit") {
 var option = prompt("Which calculator do you want to use? cups, gallons, or pints");
 
 option = option.toLowerCase();
@@ -32,4 +32,5 @@ else if (option === "gallons") {
 
 else if(option === "pints") {
   pintsToQuarts();
+}
 }
